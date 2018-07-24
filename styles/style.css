@@ -1,0 +1,369 @@
+@font-face {
+  font-family: Myfont;
+  src: url(../fonts/Apercu-Mono.otf) format("opentype"); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: Myfont; }
+
+.header-container {
+  background-color: #2a3fea;
+  color: #fff;
+  padding: 3.5rem;
+  height: 100vh;
+  font-size: 1.2rem; }
+
+.navbar {
+  position: relative; }
+
+.navigation-links--container {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.navigation-links {
+  list-style: none; }
+
+.navigation__link {
+  display: inline-block; }
+  .navigation__link:not(:first-child) {
+    margin-left: 3rem; }
+  .navigation__link:link, .navigation__link:active, .navigation__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .navigation__link:hover {
+    text-decoration: underline; }
+
+.logo {
+  height: 4rem; }
+
+.header__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  width: 100%;
+  letter-spacing: 0.29rem; }
+  .header__heading--text {
+    display: inline-block;
+    margin-left: 7rem; }
+  .header__heading--input--container {
+    float: right;
+    left: 50%;
+    top: -1px;
+    font-size: 1.2rem;
+    width: 45%; }
+  .header__heading--input {
+    position: relative;
+    display: inline-block;
+    width: 60%; }
+  .header__heading--button {
+    position: relative;
+    display: inline-block; }
+
+.btn:link, .btn:active, .btn:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: solid 0.5px #fff;
+  margin-left: 3rem; }
+
+.btn:hover {
+  color: #2a3fea;
+  background-color: #fff; }
+
+.link:link, .link:active, .link:visited {
+  color: #fff;
+  text-decoration: none; }
+
+.input-email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #fff; }
+  .input-email::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */ }
+  .input-email:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff; }
+  .input-email::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff; }
+
+.down-arrow {
+  color: #fff;
+  position: absolute;
+  left: 49%;
+  bottom: 2rem;
+  font-size: 5rem; }
+
+.main {
+  padding: 0 10rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+  .row .col-2-of-5 {
+    width: 50%;
+    padding-right: 14rem; }
+  .row .col-3-of-5 {
+    width: 50%; }
+
+.section__photo {
+  width: 100%; }
+
+.what-is {
+  font-size: 1.2rem;
+  margin: 8rem 0; }
+  .what-is__heading {
+    color: #2a3fea;
+    margin-bottom: 5rem; }
+  .what-is__paragraph {
+    color: #5c5c5c; }
+
+.the-team {
+  font-size: 1.2rem;
+  margin: 8rem 0; }
+  .the-team__heading {
+    color: #2a3fea;
+    margin-bottom: 5rem; }
+  .the-team__paragraph {
+    color: #5c5c5c; }
+  .the-team__text-containter {
+    position: absolute;
+    margin-top: 20%; }
+
+.crosses {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  margin-top: 100px;
+  top: 0;
+  left: -5px; }
+  .crosses-container {
+    position: relative; }
+
+.careers {
+  font-size: 1.2rem;
+  margin: 8rem 0; }
+  .careers__heading {
+    color: #2a3fea;
+    margin-top: 4rem; }
+    .careers__heading--margin {
+      margin-top: 5rem;
+      padding-top: 5rem; }
+    .careers__heading--link:link, .careers__heading--link:active, .careers__heading--link:visited {
+      color: #2a3fea;
+      text-decoration: none; }
+    .careers__heading--link:hover {
+      text-decoration: underline; }
+  .careers__subheading {
+    margin-top: 1rem;
+    color: rgba(42, 64, 233, 0.6); }
+  .careers__paragraph {
+    margin-top: 4rem;
+    color: #5c5c5c; }
+    .careers__paragraph--link:link, .careers__paragraph--link:active, .careers__paragraph--link:visited {
+      color: #2a3fea;
+      text-decoration: none; }
+
+.blue-border-top {
+  border-top: #2a3fea solid 1px; }
+
+.footer__container-top {
+  position: relative;
+  background-color: #2a3fea;
+  height: 20rem;
+  font-size: 1.2rem;
+  width: 100%; }
+  .footer__container-top--text {
+    padding-top: 10rem; }
+
+.footer__heading--text {
+  float: left;
+  margin-left: 7rem;
+  color: #fff; }
+
+.footer__heading--input--container {
+  float: right;
+  left: 50%;
+  top: -1px;
+  margin-right: 7rem;
+  font-size: 1.2rem;
+  width: 45%; }
+
+.footer__heading--input {
+  position: relative;
+  display: inline-block;
+  width: 60%; }
+
+.footer__heading--button {
+  position: relative;
+  display: inline-block; }
+
+.footer__input-email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  letter-spacing: 0.15rem;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #fff; }
+  .footer__input-email::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */ }
+  .footer__input-email:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff; }
+  .footer__input-email::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff; }
+
+.footer__container-bottom {
+  border: solid 5px #2a3fea; }
+  .footer__container-bottom--margin {
+    margin: 8rem 5rem; }
+  .footer__container-bottom--right-container {
+    position: relative;
+    font-size: 1.4rem;
+    text-align: right; }
+
+.just-mobile {
+  visibility: hidden; }
+
+@media (max-width: 1140px) {
+  .navigation-links--container {
+    visibility: hidden; }
+  .header__heading {
+    font-size: 1.6rem;
+    width: 100%;
+    letter-spacing: 0.29rem;
+    height: 100%;
+    padding: 0 2rem; }
+    .header__heading--text {
+      margin-left: 0;
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translate(0, -50%); }
+    .header__heading--input--container {
+      margin-right: 0;
+      font-size: 1.2rem;
+      width: 90%;
+      float: none;
+      height: 100%;
+      bottom: 0;
+      left: 0; }
+    .header__heading--input {
+      width: 90%;
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .header__heading--button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .down-arrow {
+    visibility: hidden; }
+  .row {
+    margin: 0 0;
+    width: 100%; }
+    .row:not(:last-child) {
+      margin-bottom: 8rem; }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .row .col-2-of-5 {
+      width: 100%;
+      padding: 0; }
+    .row .col-3-of-5 {
+      width: 100%; }
+  .main {
+    padding: 0 2rem; }
+  .what-is {
+    font-size: 1.2rem;
+    margin: 4rem 0; }
+    .what-is__heading {
+      color: #2a3fea;
+      margin-bottom: 2rem; }
+    .what-is__paragraph {
+      color: #5c5c5c;
+      margin-bottom: 2rem; }
+  .the-team {
+    font-size: 1.2rem;
+    margin: 0 0; }
+    .the-team__heading {
+      color: #2a3fea;
+      margin-bottom: 2rem; }
+    .the-team__paragraph {
+      color: #5c5c5c;
+      margin-bottom: 4rem; }
+    .the-team__text-containter {
+      position: relative;
+      margin-top: 0; }
+  .crosses {
+    visibility: hidden; }
+  .just-desctop {
+    display: none; }
+  .just-mobile {
+    visibility: visible; }
+  .footer__container-top {
+    height: 25rem; }
+    .footer__container-top--text {
+      padding: 4rem 2rem; }
+  .footer__heading--text {
+    margin-left: 0; }
+  .footer__heading--input--container {
+    float: none;
+    bottom: 0;
+    left: 0;
+    margin-right: 0;
+    width: 90%; }
+  .footer__heading--input {
+    position: absolute;
+    top: 70%;
+    left: 2rem;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 90%; }
+  .footer__container-bottom {
+    border: solid 5px #2a3fea; }
+    .footer__container-bottom--margin {
+      margin: 0;
+      padding: 5px; }
+    .footer__container-bottom--right-container {
+      position: relative;
+      font-size: 1.4rem;
+      text-align: right;
+      padding-top: 4rem; } }

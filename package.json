@@ -1,0 +1,15 @@
+{
+  "name": "murmur",
+  "version": "1.0.0",
+  "description": "Protect secrets with magic",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss styles/style.css -w"
+  },
+  "author": "Ivo Kostovski",
+  "license": "ISC"
+}

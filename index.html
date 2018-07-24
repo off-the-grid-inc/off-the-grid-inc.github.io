@@ -1,27 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OFF-THE-GRID Inc.</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <script src="js/trianglify.min.js"></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+</head>
 
-  <body>
-
-    <div id="background"></div>
-    <div id="main-container" class="overlay">
-      <div class="flex-container">
-        <div id="logo" class="flex-item">
-          <img src="logo.svg"/>
+<body>
+    <div class="header-container">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="img/logo-negativo.png" alt="Logo" class="logo">
+            </div>
+            <div class="navigation-links--container">
+                <ul class="navigation-links">
+                    <li class="navigation__link"><a href="#what-is" class="navigation__link">_What is _murmur?</a></li>
+                    <li class="navigation__link"><a href="#the-team" class="navigation__link">_The team</a></li>
+                    <li class="navigation__link"><a href="#careers" class="navigation__link">_Careers</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__heading">
+            <div class="header__heading--text">_Protect your secrets with magic.</div>
+            <div class="header__heading--input--container">
+                <div class="header__heading--input">
+                    <input type="email" class="input-email" placeholder="Enter your email to receive more information">
+                </div>
+                <div class="header__heading--button">
+                    <a class="btn" href="#">Send email</a>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="down-arrow">
+            <a href="#what-is" alt="go down" class="link">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <main class="main">
+        <section class="what-is" id="what-is">
+            <div class="row">
+                <div class="col-2-of-5">
+                    <div class="what-is__heading">_What is _murmur?</div>
+                    <div class="what-is__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odit at voluptatum facere ullam
+                        cupiditate repudiandae quo nam? Magni, alias! Nobis sit eligendi ducimus nulla in unde impedit fuga
+                        minima.
+                    </div>
+                </div>
+                <div class="col-3-of-5">
+                    <img src="img/photo01.png" alt="Photo1" class="section__photo">
+                </div>
+            </div>
+        </section>
 
-  </body>
+        <section class="the-team" id="the-team">
+            <div class="row">
+                <div class="crosses-container">
+                    <img src="img/maya.png" alt="crosses" class="crosses">
+                    <div class="col-2-of-5 just-desctop">
+                        <img src="img/photo02.png" alt="Photo1" class="section__photo">
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="the-team__text-containter">
+                            <div class="the-team__heading">_The team</div>
+                            <div class="the-team__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odit at voluptatum facere
+                                ullam cupiditate repudiandae quo nam? Magni, alias! Nobis sit eligendi ducimus nulla in unde
+                                impedit fuga minima.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2-of-5 just-mobile">
+                        <img src="img/photo02.png" alt="Photo1" class="section__photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="careers" id="careers">
+            <div class="row blue-border-top">
+                <div class="col-2-of-5">
+                    <div class="careers__heading">_Careers</div>
+                </div>
+                <div class="col-3-of-5">
+                    <div class="careers__heading"><a href="#" class="careers__heading--link">Lorem ipsum dolor sit</a></div>
+                    <div class="careers__subheading">Madrid</div>
+                    <div class="careers__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odit at voluptatum facere ullam
+                        cupiditate repudiandae quo nam? Magni, alias! Nobis sit eligendi ducimus nulla in unde impedit fuga
+                        minima.
+                        <a href="#" class="careers__paragraph--link">(...)</a>
+                    </div>
+                    <div class="careers__heading careers__heading--margin blue-border-top"><a href="#" class="careers__heading--link">Dignissimos odit at voluptatum</a></div>
+                    <div class="careers__subheading">New York</div>
+                    <div class="careers__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odit at voluptatum facere ullam
+                        cupiditate repudiandae quo nam? Magni, alias! Nobis sit eligendi ducimus nulla in unde impedit fuga
+                        minima.
+                        <a href="#" class="careers__paragraph--link">(...)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container-top">
+                <div class="footer__container-top--text">
+                    <div class="footer__heading--text">_Protect your secrets with magic.</div>
+                    <div class="footer__heading--input--container">
+                        <div class="footer__heading--input">
+                            <input type="email" class="footer__input-email" placeholder="Enter your email to receive more information">
+                        </div>
+                        <div class="header__heading--button">
+                            <a class="btn" href="#">Send email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__container-bottom">
+                <div class="row footer__container-bottom--margin">
+                    <div class="col-2-of-5">
+                        <img src="img/logo.png" alt="Logo" class="logo">
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="footer__container-bottom--right-container">
+                            OFF-THE-GRID, Inc. <a href="mailto:hello@murmur.us">hello@murmur.us</a>
+                            <br><br>
+                            525 W 28th st. - 10001 New York, NY +1 234 567 890 <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
 </html>
