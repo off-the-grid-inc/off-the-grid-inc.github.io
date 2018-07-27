@@ -50,9 +50,8 @@ body {
 .footer__logo {
   height: 4rem;
   position: relative;
-  top: 70%;
-  left: 1rem;
-  transform: translate(-50%, 0); }
+  top: 7.5rem;
+  left: 2rem; }
 
 .header__heading {
   position: relative;
@@ -64,21 +63,21 @@ body {
   letter-spacing: 0.29rem; }
   .header__heading--text {
     position: absolute;
-    left: 4rem;
+    left: 3rem;
     top: -1px; }
   .header__heading--input--container {
     position: absolute;
     right: 0;
-    top: -1px;
+    top: .3rem;
     font-size: 1.2rem;
-    width: 45%; }
+    width: 50%; }
   .header__heading--input {
     position: absolute;
     left: 0;
-    width: 60%; }
+    width: 65%; }
   .header__heading--button {
     position: absolute;
-    right: 4rem; }
+    right: 3rem; }
 
 .btn:link, .btn:active, .btn:visited {
   color: #fff;
@@ -86,7 +85,7 @@ body {
   text-transform: uppercase;
   padding: 13px 20px;
   border: solid 0.5px #fff;
-  margin-left: 3rem;
+  margin-left: 1rem;
   white-space: nowrap; }
 
 .btn:hover {
@@ -101,7 +100,7 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.22rem;
   font-size: 1.2rem;
   width: 100%;
   color: #fff; }
@@ -251,8 +250,8 @@ body {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    letter-spacing: 0.15rem;
-    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-size: .9rem;
     width: 100%;
     color: #fff; }
     .footer__input-email::placeholder {
@@ -267,11 +266,13 @@ body {
       /* Microsoft Edge */
       color: #fff; }
   .footer__container-bottom {
-    border: solid 5px #2a3fea; }
-    .footer__container-bottom--margin {
-      margin: 8rem 5rem; }
+    border: solid 5px #2a3fea;
+    height: 20rem; }
     .footer__container-bottom--right-container {
       position: relative;
+      bottom: -7.5rem;
+      right: 2rem;
+      height: 100%;
       font-size: 1.4rem;
       text-align: right; }
 
@@ -279,8 +280,30 @@ body {
   visibility: hidden; }
 
 @media (max-width: 1140px) {
+  .header-container {
+    background-color: #2a3fea;
+    color: #fff;
+    padding: 2rem 1rem; }
   .navigation-links--container {
     visibility: hidden; }
+  .input-email {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.18rem;
+    font-size: .9rem;
+    color: #fff; }
+    .input-email::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #fff;
+      opacity: 1;
+      /* Firefox */ }
+    .input-email:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #fff; }
+    .input-email::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #fff; }
   .header__heading {
     height: 100%;
     padding: 0 2rem; }
@@ -290,17 +313,17 @@ body {
       left: 1rem;
       transform: translate(0, -50%); }
     .header__heading--input--container {
-      width: 90%;
+      width: 95%;
       bottom: 0;
       left: 0;
       text-align: center; }
     .header__heading--input {
-      width: 90%;
-      bottom: 50px;
+      width: 98%;
+      bottom: 6rem;
       left: 50%;
       transform: translate(-50%, -50%); }
     .header__heading--button {
-      bottom: 10px;
+      bottom: 2rem;
       left: 50%;
       right: 0;
       transform: translate(-50%, -50%); }
@@ -379,14 +402,20 @@ body {
     transform: translate(-50%, -50%); }
   .footer__container-bottom {
     border: solid 5px #2a3fea;
+    height: 30rem;
     position: relative; }
     .footer__container-bottom--margin {
-      margin: 0;
-      padding: 5px; }
+      position: relative;
+      height: 100%; }
     .footer__container-bottom--right-container {
-      float: right;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: unset;
+      left: unset;
+      right: 1rem;
+      height: unset;
       font-size: 1.4rem;
       text-align: right;
-      padding-top: 4rem;
       line-height: 2.4;
       width: 50%; } }
