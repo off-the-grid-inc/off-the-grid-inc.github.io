@@ -82,33 +82,42 @@ body {
   height: 4rem;
 }
 
+.footer__logo {
+  height: 4rem;
+  position: relative;
+  top: 70%;
+  left: 1rem;
+  transform: translate(-50%, 0);
+}
+
 .header__heading {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   width: 100%;
   letter-spacing: 0.29rem;
   &--text {
-    display: inline-block;
-    margin-left: 7rem;
+    position: absolute;
+    left: 4rem;
+    top: -1px;
   }
   &--input--container {
-    float: right;
-    left: 50%;
+    position: absolute;
+    right: 0;
     top: -1px;
     font-size: 1.2rem;
     width: 45%;
   }
   &--input {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    left: 0;
     width: 60%;
   }
   &--button {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    right: 4rem;
   }
 }
 
@@ -119,9 +128,10 @@ body {
     color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 13px 20px;
     border: solid 0.5px $color-white;
     margin-left: 3rem;
+    white-space: nowrap;
   }
   &:hover {
     color: $color-blue;
@@ -199,7 +209,7 @@ body {
 }
 
 .what-is {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 8rem 0;
   &__heading {
     color: $color-blue;
@@ -207,11 +217,12 @@ body {
   }
   &__paragraph {
     color: $color-gray;
+    line-height: 2.4;
   }
 }
 
 .the-team {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 8rem 0;
   &__heading {
     color: $color-blue;
@@ -219,10 +230,11 @@ body {
   }
   &__paragraph {
     color: $color-gray;
+    line-height: 2.4;
   }
   &__text-containter {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 18%;
   }
 }
 
@@ -239,7 +251,7 @@ body {
 }
 
 .careers {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 8rem 0;
   &__heading {
     color: $color-blue;
@@ -263,10 +275,15 @@ body {
   &__subheading {
     margin-top: 1rem;
     color: rgba($color: #2a40e9, $alpha: 0.6);
+    
   }
   &__paragraph {
     margin-top: 4rem;
     color: $color-gray;
+    line-height: 2.4;
+    &:hover {
+      text-decoration: underline;
+    }
     &--link {
       &:link,
       &:active,
@@ -283,38 +300,49 @@ body {
 }
 
 .footer {
+  padding-bottom: 6rem;
   &__container-top {
     position: relative;
+    color: $color-white;
     background-color: $color-blue;
     height: 20rem;
     font-size: 1.2rem;
     width: 100%;
     &--text {
-      padding-top: 10rem;
+      position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        width: 100%;
+        letter-spacing: 0.29rem;
     }
   }
   &__heading {
     &--text {
-      float: left;
-      margin-left: 7rem;
-      color: $color-white;
+      position: absolute;
+        left: 4rem;
+        top: -1px;
     }
     &--input--container {
-      float: right;
-      left: 50%;
-      top: -1px;
-      margin-right: 7rem;
-      font-size: 1.2rem;
-      width: 45%;
+      position: absolute;
+        right: 0;
+        top: -1px;
+        font-size: 1.2rem;
+        width: 45%;
     }
     &--input {
-      position: relative;
-      display: inline-block;
-      width: 60%;
+      position: absolute;
+        left: 0;
+        width: 60%;
     }
     &--button {
-      position: relative;
-      display: inline-block;
+      position: absolute;
+      right: 4rem;
+      &--btn {
+        height: 40rem;
+        background-color: green;
+    }
     }
   }
   &__input-email {
@@ -362,38 +390,30 @@ body {
     visibility: hidden;
   }
   .header__heading {
-    font-size: 1.6rem;
-    width: 100%;
-    letter-spacing: 0.29rem;
     height: 100%;
     padding: 0 2rem;
     &--text {
-      margin-left: 0;
       position: absolute;
-      top: 50%;
-      left: 2rem;
+      top: 45%;
+      left: 1rem;
       transform: translate(0, -50%);
     }
     &--input--container {
-      margin-right: 0;
-      font-size: 1.2rem;
       width: 90%;
-      float: none;
-      height: 100%;
       bottom: 0;
       left: 0;
+      text-align: center;
     }
     &--input {
       width: 90%;
-      position: absolute;
       bottom: 50px;
       left: 50%;
       transform: translate(-50%, -50%);
     }
     &--button {
-      position: absolute;
       bottom: 10px;
       left: 50%;
+      right: 0;
       transform: translate(-50%, -50%);
     }
   }
@@ -415,11 +435,9 @@ body {
       width: 100%;
     }
   }
-
   .main {
     padding: 0 2rem;
   }
-
   .what-is {
     font-size: 1.2rem;
     margin: 4rem 0;
@@ -432,7 +450,6 @@ body {
       margin-bottom: 2rem;
     }
   }
-
   .the-team {
     font-size: 1.2rem;
     margin: 0 0;
@@ -449,57 +466,67 @@ body {
       margin-top: 0;
     }
   }
-
   .crosses {
     visibility: hidden;
   }
-
   .just-desctop {
     display: none;
   }
-
   .just-mobile {
     visibility: visible;
   }
-
+  .footer__logo {
+    top: 1rem;
+    transform: translate(0, 0);
+  }
   .footer {
     &__container-top {
-      height: 25rem;
+      height: 30rem;
       &--text {
-        padding: 4rem 2rem;
+        height: 100%;
+        padding: 0 2rem;
       }
     }
     &__heading {
       &--text {
-        margin-left: 0;
+        position: absolute;
+        top: 25%;
+        left: 1rem;
+        transform: translate(0, -50%);
       }
       &--input--container {
-        float: none;
+        width: 90%;
         bottom: 0;
         left: 0;
-        margin-right: 0;
-        width: 90%;
+        text-align: center;
       }
       &--input {
-        position: absolute;
-        top: 70%;
-        left: 2rem;
-        transform: translate(0, -50%);
-        display: inline-block;
         width: 90%;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &--button {
+        bottom: 10px;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
       }
     }
     &__container-bottom {
       border: solid 5px $color-blue;
+      position: relative;
       &--margin {
         margin: 0;
         padding: 5px;
       }
       &--right-container {
-        position: relative;
+        float: right;
         font-size: 1.4rem;
         text-align: right;
         padding-top: 4rem;
+        line-height: 2.4;
+        width: 50%;
       }
     }
   }
